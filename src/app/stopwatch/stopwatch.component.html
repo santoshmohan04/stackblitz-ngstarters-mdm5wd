@@ -1,0 +1,19 @@
+<div class="watchbody">
+  <div class="container">
+    <div id="timer">{{leadingHours + ":" + leadingMinutes + ":" + leadingSeconds}}</div>
+
+    <div class="buttons">
+      <button id="startStopBtn" type="button" (click)="startPauseTimer()">
+        @if(timerStatus === 'stopped'){ 
+          <i class="fa-solid fa-play" id="play"></i>
+        }@else {
+          <i class="fa-solid fa-pause" id="pause"></i>
+        }
+      </button>
+
+      <button id="resetBtn" type="button" (click)="resetTimer()">
+        <i class="fa-solid fa-arrow-rotate-left" id="reset"></i>
+      </button>
+    </div>
+  </div>
+</div>

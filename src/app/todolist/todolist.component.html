@@ -1,0 +1,20 @@
+
+<div class="todocontainer">
+  <div class="container">
+    <div id="add-task-container">
+        <input type="text" placeholder="Enter Task" id="input-task" [(ngModel)]="inpVal">
+        <button id="add-task" type="button" (click)="addTask()"><i class="fa-solid fa-plus"></i></button>
+    </div>
+  
+    <div id="task-container">
+      @for(item of taskLists; track item.id){
+        <div class="task">
+          <li [ngStyle]="{'textDecoration': item.completed ? 'line-through' : ''}">{{item.task}}</li>
+          <button type="button" class="checkTask" (click)="item.completed = true"><i class="fa-solid fa-check"></i></button>
+          <button type="button" class="deleteTask" (click)="deleteTask(item)"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      }
+    </div>
+  </div>
+</div>
+

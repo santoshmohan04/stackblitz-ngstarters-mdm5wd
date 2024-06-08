@@ -1,0 +1,14 @@
+<div id="modalbodycont">
+  <button id="open-btn" type="button" (click)="isModalOpen = true">
+    <p>Where's Our Modal</p>
+  </button>
+
+  @if(isModalOpen){
+  <div id="modal-container">
+    <div id="modal">
+      <p>Here I am!</p>
+      <div id="close-btn" (click)="isModalOpen = false">&times;</div>
+    </div>
+  </div>
+  }
+</div>

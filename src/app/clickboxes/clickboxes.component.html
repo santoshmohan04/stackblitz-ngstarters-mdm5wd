@@ -1,0 +1,13 @@
+<div id="sportslist">
+  <ul id="sports">
+    @for(item of sportslist; track item.id){
+    <li
+      [id]="item.id"
+      (click)="item.bgcolor = 'lightgrey'"
+      [ngStyle]="{ 'background-color': item.bgcolor }"
+    >
+      {{ item.name }}
+    </li>
+    }
+  </ul>
+</div>

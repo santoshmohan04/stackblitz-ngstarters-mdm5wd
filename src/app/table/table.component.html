@@ -1,0 +1,25 @@
+<h1>Products List</h1>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Brand</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(item of product_details; track item.id){
+      <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.brand }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

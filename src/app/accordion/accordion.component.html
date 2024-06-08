@@ -1,0 +1,16 @@
+<div class="accordionbody">
+  <div class="accordion">
+    <h2 class="accordion-title">Frequently Asked Questions</h2>
+
+    @for(item of dataList; track item; let idx = $index){
+    <div
+      class="content-container"
+      (click)="toggleActive(idx)"
+      [ngClass]="{ active: activeIndex === idx }"
+    >
+      <div class="question">{{ item.question }}</div>
+      <div class="answer">{{ item.answer }}</div>
+    </div>
+    }
+  </div>
+</div>
