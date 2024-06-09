@@ -8,6 +8,7 @@ import { AccordionComponent } from '../accordion/accordion.component';
 import { StopwatchComponent } from '../stopwatch/stopwatch.component';
 import { TodolistComponent } from '../todolist/todolist.component';
 import { PrarozComponent } from '../praroz/praroz.component';
+import { ErrorpageComponent } from '../errorpage/errorpage.component';
 
 const routes: Routes = [
   { path: '', component: QuotesComponent },
@@ -18,7 +19,7 @@ const routes: Routes = [
   { path: 'todo', component: TodolistComponent},
   { path: 'products', component: TableComponent },
   { path: 'praroz', component: PrarozComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: '**', component: ErrorpageComponent },
 ];
 
 @NgModule({

@@ -52,8 +52,8 @@
 }
 
 .form{
-    width: 250px;
-    height: 380px;
+    width: 300px;
+    height: 420px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
     top: -20px;
@@ -139,13 +139,13 @@
     text-decoration: none;
     color: #fff;
 }
-.icons .bi{
+.icons i{
     color: #fff;
     font-size: 30px;
     padding-left: 14px;
     padding-top: 5px;
     transition: 0.3s ease;
 }
-.icons .bi:hover{
+.icons i:hover{
     color: #ff7200;
 }
